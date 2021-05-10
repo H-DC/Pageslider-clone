@@ -92,19 +92,19 @@ body {
 
 .rightSection h2 {
   font-style: italic;
-  font-size: 4rem;
+  font-size: 4vw;
 }
 
 .rightSection span {
-  margin-top: 0.2rem;
-  font-size: 0.8rem;
+  margin-top: 0.2vw;
+  font-size: 0.8vw;
   vertical-align: middle;
 }
 
 .rightSection svg {
   vertical-align: middle;
-  font-size: 0.8rem;
-  margin-bottom: 0.15rem;
+  font-size: 0.8vw;
+  margin-bottom: 0.15vw;
   margin-right: 0.1rem;
 }
 
