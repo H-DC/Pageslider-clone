@@ -1,0 +1,159 @@
+#main, .rightSection .textBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.blackFilter {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  width: 50vw;
+}
+
+.leftSection {
+  width: 50vw;
+  height: 100vh;
+  transition: all 1s ease;
+}
+
+.leftSection div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.leftSection div:nth-child(3) {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.leftSection div:nth-child(3) #imageBox {
+  margin: 0px;
+  width: 15vw;
+  height: 20vw;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.leftSection div:nth-child(3) img {
+  width: 15vw;
+  height: 20vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.leftSection div:nth-child(3) h3 {
+  color: #ebebeb;
+  margin: 1rem 0rem 0.3rem 0rem;
+  font-size: 1.5rem;
+}
+
+.leftSection div:nth-child(3) p {
+  color: #ebebeb;
+  margin: 0rem;
+  font-size: 0.8rem;
+}
+
+.rightSection {
+  width: 50vw;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.rightSection img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.rightSection .textBox {
+  flex-direction: column;
+  position: absolute;
+  bottom: 0px;
+  width: 50vw;
+  margin-bottom: 2rem;
+  color: #ebebeb;
+}
+
+.rightSection h2 {
+  font-style: italic;
+  font-size: 4rem;
+}
+
+.rightSection span {
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+
+.rightSection svg {
+  vertical-align: middle;
+  font-size: 0.8rem;
+  margin-bottom: 0.15rem;
+  margin-right: 0.1rem;
+}
+
+.rightSection a {
+  color: white;
+  text-decoration: none;
+}
+
+.customBtn {
+  position: relative;
+  background-color: transparent;
+  border-radius: 0.2rem;
+  height: 2rem;
+  width: 6rem;
+  border: none;
+  outline: none;
+  color: #ebebeb;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.1s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.customBtn span {
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  opacity: 0.2;
+  pointer-events: none;
+  background-color: white;
+  animation: spread 1s ease;
+}
+
+.customBtn:hover {
+  font-size: 0.9rem;
+}
+
+@keyframes spread {
+  0% {
+    width: 0rem;
+    height: 0rem;
+  }
+  90% {
+    width: 10rem;
+    height: 10rem;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
