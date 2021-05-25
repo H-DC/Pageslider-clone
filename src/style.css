@@ -10,6 +10,10 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#main {
+  position: relative;
+}
+
 .blackFilter {
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -20,6 +24,7 @@ body {
 }
 
 .leftSection {
+  position: relative;
   width: 50vw;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
