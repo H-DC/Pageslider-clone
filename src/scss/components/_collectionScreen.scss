@@ -13,12 +13,14 @@ body {
     position: absolute;
     top: 0px;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 50vw;
 }
 
 .leftSection {
     width: 50vw;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     transition: all 1s ease;
 
     div:nth-child(2) {
@@ -36,16 +38,16 @@ body {
 
         #imageBox {
             margin: 0px;
-            width: 15vw;
-            height: 20vw;
+            width: calc(min(15vw, 30vh));
+            height: calc(min(20vw, 40vh));
             background-size: cover;
             background-position: center;
             overflow: hidden;
         }
 
         img {
-            width: 15vw;
-            height: 20vw;
+            width: calc(min(15vw, 30vh));
+            height: calc(min(20vw, 40vh));
             object-fit: cover;
             object-position: center;
         }
@@ -53,13 +55,13 @@ body {
         h3 {
             color: $white;
             margin: 1rem 0rem 0.3rem 0rem;
-            font-size: 1.5rem;
+            font-size: 1.5vw;
         }
 
         p {
             color: $white;
             margin: 0rem;
-            font-size: 0.8rem;
+            font-size: 0.8vw;
         }
     }
 }
@@ -67,6 +69,7 @@ body {
 .rightSection {
     width: 50vw;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
     background-size: cover;
     background-position: center;

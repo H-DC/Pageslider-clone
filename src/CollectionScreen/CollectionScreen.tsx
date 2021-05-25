@@ -28,7 +28,6 @@ function CollectionScreen() {
         else if ((sliderPos+num)>(data.length-1)) { newPos = 0 ;}
         else {newPos = sliderPos+num;}
 
-        console.log(t2.isActive());
         if(!t2.isActive()&&!t3.isActive()){
             t1.clear();
             t1.to(smallImgRef.current, {

@@ -67,7 +67,7 @@ export var data = [{
     category: 'Architecture',
     color: '#d89e80',
     desc:
-      'Dortheavej Residence BIG, Dortheavej, Copenhagen Municipality, Denmark',
+      'Dortheavej, Copenhagen, Denmark',
     url:
       'https://images.unsplash.com/photo-1596572133110-277ff81c8b5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80',
   },
