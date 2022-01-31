@@ -3,22 +3,6 @@ import CustomBtn from '../Components/CustomBtn';
 import { data } from '../data';
 import { gsap } from 'gsap';
 import { FaGithub, FaYoutube } from 'react-icons/fa';
-import img1 from '../assets/img1.png';
-import img2 from '../assets/img2.png';
-import img3 from '../assets/img3.png';
-import img4 from '../assets/img4.png';
-import img5 from '../assets/img5.png';
-import img6 from '../assets/img6.png';
-import img7 from '../assets/img7.png';
-import img8 from '../assets/img8.png';
-import img9 from '../assets/img9.png';
-import img10 from '../assets/img10.png';
-import img11 from '../assets/img11.png';
-import img12 from '../assets/img12.png';
-import img13 from '../assets/img13.png';
-import img14 from '../assets/img14.png';
-import img15 from '../assets/img15.png';
-let imgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15];
 
 function CollectionScreen() {
     const smallImgRef = useRef<HTMLImageElement>(null);
@@ -66,7 +50,7 @@ function CollectionScreen() {
                 })
                 .to(imageBoxRef.current, {
                     duration: 0,
-                    backgroundImage: `url('${imgs[newPos]}')`,
+                    backgroundImage: `url('${data[newPos].url}')`,
                 })
                 .pause();
 
@@ -87,7 +71,7 @@ function CollectionScreen() {
                 })
                 .to(rightBgRef.current, {
                     duration: 0,
-                    backgroundImage: `url('${imgs[newPos]}')`,
+                    backgroundImage: `url('${data[newPos].url}')`,
                 })
                 .pause();
 
@@ -137,15 +121,15 @@ function CollectionScreen() {
                     <CustomBtn manageClick={manageClick} deltaPos={1} text="Next" />
                 </div>
                 <div>
-                    <div id="imageBox" ref={imageBoxRef} style={{ backgroundImage: `url('${imgs[0]}')` }}>
-                        <img id="smallImg" src={imgs[sliderPos]} ref={smallImgRef} alt="" />
+                    <div id="imageBox" ref={imageBoxRef} style={{ backgroundImage: `url('${data[0].url}')` }}>
+                        <img id="smallImg" src={data[sliderPos].url} ref={smallImgRef} alt="" />
                     </div>
                     <h3 ref={titreRef}>{data[sliderPos].name} </h3>
                     <p ref={sousTitreRef}>{data[sliderPos].desc} </p>
                 </div>
             </div>
-            <div className="rightSection" ref={rightBgRef} style={{ backgroundImage: `url('${imgs[0]}')` }}>
-                <img ref={rightImgRef} src={imgs[sliderPos]} alt="" />
+            <div className="rightSection" ref={rightBgRef} style={{ backgroundImage: `url('${data[0].url}')` }}>
+                <img ref={rightImgRef} src={data[sliderPos].url} alt="" />
                 <div className="blackFilter"></div>
                 <div className="textBox">
                     <h2>Collection</h2>
